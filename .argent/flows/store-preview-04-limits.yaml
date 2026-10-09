@@ -1,0 +1,9 @@
+executionPrerequisite: >-
+  App on Progress.
+steps:
+  - tap: { text: Limits, role: text }
+  - await: { visible: { text: Daily limit } }
+  - wait: 1200
+  - echo: Pick the 40 preset; the stage chip below reacts to the stricter limit
+  - tap: { text: Balanced }
+  - wait: 1800

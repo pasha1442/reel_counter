@@ -1,0 +1,20 @@
+*.iml
+.gradle/
+.kotlin/
+/local.properties
+/.idea/
+.DS_Store
+build/
+/captures
+.externalNativeBuild
+.cxx
+*.keystore
+!debug.keystore
+google-services.json
+
+# Release signing (see LAUNCH_SETUP.md). Never commit these.
+keystore.properties
+*.jks
+
+# goldie store assets (rendered, regenerate with goldie all)
+goldie/out/

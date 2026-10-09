@@ -1,0 +1,10 @@
+steps:
+  - launch: com.reelcounter.android.screenshots
+  - await: { visible: { text: reels today } }
+  - tap: { text: Progress, role: text }
+  - await: { visible: { text: Reels per day } }
+  - echo: This week is partial, so step back to last week, which the seed always fills
+  - tap: { text: Previous }
+  - await: { visible: { text: Last week } }
+  - await: { idle: true }
+  - wait: 1200

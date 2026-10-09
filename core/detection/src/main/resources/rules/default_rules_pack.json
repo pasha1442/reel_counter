@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "note": "YouTube 20.10.41 checked on an Android 16 emulator (2026-09-29): reel_recycler and reel_player_page_container exist; the pager reports no item indexes and the channel/title overlay has no view IDs, so YouTube counts by scroll distance. Instagram IDs are unverified starters: confirm with uiautomator dump before beta, then record replay sessions.",
+  "apps": [
+    {
+      "packageName": "com.instagram.android",
+      "surfaceViewIds": [
+        "com.instagram.android:id/clips_viewer_view_pager",
+        "com.instagram.android:id/clips_video_container"
+      ],
+      "pagerViewIds": [
+        "com.instagram.android:id/clips_viewer_view_pager"
+      ],
+      "fingerprintViewIds": [
+        "com.instagram.android:id/clips_author_username",
+        "com.instagram.android:id/clips_caption_component"
+      ],
+      "minSurfaceCoverage": 0.75
+    },
+    {
+      "packageName": "com.google.android.youtube",
+      "surfaceViewIds": [
+        "com.google.android.youtube:id/reel_recycler",
+        "com.google.android.youtube:id/reel_player_page_container"
+      ],
+      "pagerViewIds": [
+        "com.google.android.youtube:id/reel_recycler"
+      ],
+      "fingerprintViewIds": [],
+      "minSurfaceCoverage": 0.75
+    }
+  ]
+}

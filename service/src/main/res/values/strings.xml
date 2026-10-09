@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="service_label">Reel Counter</string>
+    <string name="service_summary">Counts Instagram Reels and YouTube Shorts</string>
+    <string name="service_description">Reel Counter uses Accessibility to see which Instagram or YouTube screen is showing, so it can count each Reel and Short you watch and block them when you reach your limit. It reads on-screen labels only in memory to tell reels apart, and never stores or sends captions, usernames, messages or anything from other apps.</string>
+
+    <string name="channel_nudges">Limit nudges</string>
+    <string name="channel_nudges_desc">Heads-ups at 50%, 80% and 100% of your daily limit</string>
+    <string name="channel_health">Counter health</string>
+    <string name="channel_health_desc">Tells you if counting stops, with a one-tap fix</string>
+    <string name="channel_live">Live count</string>
+    <string name="channel_live_desc">Today\'s count in the status bar</string>
+
+    <string name="nudge_half_title">Halfway to your limit</string>
+    <string name="nudge_half_body">%1$d of %2$d reels. Your brain is getting a little foggy.</string>
+    <string name="nudge_most_title">80% of your limit</string>
+    <string name="nudge_most_body">%1$d of %2$d. Cracks are showing. Pick your last few wisely.</string>
+    <string name="nudge_blocked_title">Limit reached</string>
+    <string name="nudge_blocked_body">That\'s %1$d reels. Reels and Shorts are blocked until midnight.</string>
+    <string name="nudge_free_title">That\'s your %1$d for today</string>
+    <string name="nudge_free_body">Your brain is melting. Want this blocked next time? Try Pro free for 7 days.</string>
+
+    <string name="health_stopped_title">Counting stopped</string>
+    <string name="health_stopped_body">Tap to fix. It takes about 10 seconds.</string>
+    <string name="health_off_title">Counting is off</string>
+    <string name="health_off_body">Your reels aren\'t being counted. Tap to turn it back on.</string>
+
+    <string name="live_title">%1$d reels today</string>
+    <string name="live_body">Limit %1$d · Brain: %2$s</string>
+</resources>

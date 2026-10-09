@@ -1,0 +1,14 @@
+executionPrerequisite: >-
+  App on Today.
+steps:
+  - echo: The Progress tab in the bottom bar (raw tap, see store-preview-01-today)
+  - tool: gesture-tap
+    args: { x: 0.379, y: 0.934 }
+  - await: { visible: { text: Reels per day } }
+  - wait: 1200
+  - echo: Back to last week, which the seed always fills
+  - tap: { text: Previous }
+  - await: { visible: { text: Last week } }
+  - wait: 1800
+  - scroll-to: { target: { text: By app } }
+  - wait: 1500

@@ -1,0 +1,119 @@
+:root {
+  --bg: #fff4e0;
+  --surface: #ffffff;
+  --text: #1c1a17;
+  --muted: #5c5548;
+  --line: #e8dcc6;
+  --accent: #8a5a1f;
+  --todo-bg: #fff1c2;
+  --todo-text: #6b4a00;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111110;
+    --surface: #1b1a18;
+    --text: #ede8e1;
+    --muted: #a39d94;
+    --line: #2c2a27;
+    --accent: #e5b574;
+    --todo-bg: #3a2e14;
+    --todo-text: #f3d58f;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #111110;
+  --surface: #1b1a18;
+  --text: #ede8e1;
+  --muted: #a39d94;
+  --line: #2c2a27;
+  --accent: #e5b574;
+  --todo-bg: #3a2e14;
+  --todo-text: #f3d58f;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+.site-header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 15px;
+}
+
+.embed .site-header, .embed .page-title { display: none; }
+.embed main { padding-top: 8px; }
+
+h1 { font-size: 30px; line-height: 1.2; margin: 8px 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 21px; margin: 36px 0 8px; }
+h3 { font-size: 17px; margin: 24px 0 4px; }
+p, li { color: var(--text); }
+.muted, .updated { color: var(--muted); font-size: 14px; }
+a { color: var(--accent); text-underline-offset: 3px; }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+
+.summary {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 4px 20px;
+  margin: 24px 0;
+}
+
+.summary dl { margin: 12px 0; }
+.summary dt { font-weight: 600; margin-top: 12px; }
+.summary dd { margin: 2px 0 0; color: var(--muted); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 15px;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+th { font-weight: 600; }
+
+.todo {
+  background: var(--todo-bg);
+  color: var(--todo-text);
+  border-radius: 6px;
+  padding: 1px 6px;
+  font-weight: 600;
+}
+
+@media (max-width: 520px) {
+  table, thead, tbody, tr, th, td { display: block; }
+  thead { display: none; }
+  td { border: none; padding: 2px 0; }
+  tr { border-bottom: 1px solid var(--line); padding: 10px 0; }
+  td:first-child { font-weight: 600; }
+}

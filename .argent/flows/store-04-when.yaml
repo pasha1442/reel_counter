@@ -1,0 +1,10 @@
+steps:
+  - launch: com.reelcounter.android.screenshots
+  - await: { visible: { text: reels today } }
+  - tap: { text: Progress, role: text }
+  - await: { visible: { text: Reels per day } }
+  - tap: { text: Previous }
+  - await: { visible: { text: Last week } }
+  - scroll-to: { target: { text: By app } }
+  - await: { idle: true }
+  - wait: 1200

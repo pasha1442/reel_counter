@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Reel Counter</string>
+    <string name="widget_label">Reel count</string>
+    <string name="widget_description">Today\'s reels and your brain\'s mood</string>
+    <string name="channel_subscription">Subscription</string>
+    <string name="trial_reminder_title">Your free trial ends in 2 days</string>
+    <string name="trial_reminder_body">After that, Pro renews as a paid subscription. If you don\'t want it, tap here to cancel in Google Play. You keep Pro until the trial ends.</string>
+</resources>

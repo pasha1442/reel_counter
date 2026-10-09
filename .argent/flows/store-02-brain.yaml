@@ -1,0 +1,9 @@
+steps:
+  - launch: com.reelcounter.android.screenshots
+  - await: { visible: { text: reels today } }
+  - echo: The brain stage chip under the brain opens the Your brain screen
+  - tap: { text: Foggy }
+  - await: { visible: { text: Your brain } }
+  - await: { visible: { text: It heals overnight } }
+  - await: { idle: true }
+  - wait: 1500

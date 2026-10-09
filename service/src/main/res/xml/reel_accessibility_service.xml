@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Scope is deliberately narrow: events only from the supported apps (the home screen app is added
+  at runtime so we know when the user leaves). isAccessibilityTool is false: this is not a
+  disability tool, and Play rejects non-tools that claim otherwise.
+  flagIncludeNotImportantViews: YouTube marks its Shorts pager "not important for accessibility",
+  so without it we never receive the pager's scroll events.
+  notificationTimeout is 0: any batching keeps only the last scroll event per window, and YouTube
+  sends the pager's scroll first and two parent views after it, so batching drops the one we need.
+  The engine throttles its own screen-tree reads instead.
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged|typeViewScrolled"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagReportViewIds|flagRetrieveInteractiveWindows|flagIncludeNotImportantViews"
+    android:canRetrieveWindowContent="true"
+    android:description="@string/service_description"
+    android:isAccessibilityTool="false"
+    android:notificationTimeout="0"
+    android:packageNames="com.instagram.android,com.google.android.youtube"
+    android:summary="@string/service_summary" />

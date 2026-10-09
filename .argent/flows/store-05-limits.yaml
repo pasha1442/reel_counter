@@ -1,0 +1,7 @@
+steps:
+  - launch: com.reelcounter.android.screenshots
+  - await: { visible: { text: reels today } }
+  - tap: { text: Limits, role: text }
+  - await: { visible: { text: Daily limit } }
+  - await: { idle: true }
+  - wait: 1200

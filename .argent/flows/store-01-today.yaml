@@ -1,0 +1,6 @@
+steps:
+  - echo: Screenshot build seeds two weeks of history on first launch, so Today opens with 14 of 50 and a foggy brain
+  - launch: com.reelcounter.android.screenshots
+  - await: { visible: { text: reels today } }
+  - await: { idle: true }
+  - wait: 1500

@@ -1,0 +1,13 @@
+executionPrerequisite: >-
+  App freshly restarted by goldie, settled on Today with the seeded 14 of 50 reels.
+steps:
+  - await: { visible: { text: reels today } }
+  - wait: 1500
+  - echo: >-
+      Raw taps at fixed points (Pixel 10 Pro) on screens with the animated brain: a selector tap
+      first waits for the screen to settle, which never happens there, and that wait shows on camera.
+      Each tap is checked by the await that follows it.
+  - echo: The Foggy stage chip under the brain on Today
+  - tool: gesture-tap
+    args: { x: 0.5, y: 0.376 }
+  - await: { visible: { text: Your brain } }

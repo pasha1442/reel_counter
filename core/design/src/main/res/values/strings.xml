@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brain stages. Tone: a friend teasing you, never a lecture, no medical claims. -->
+    <string name="stage_fresh">Fresh</string>
+    <string name="stage_foggy">Foggy</string>
+    <string name="stage_cracking">Cracking</string>
+    <string name="stage_melting">Melting</string>
+    <string name="stage_rotten">Rotten</string>
+
+    <string name="tagline_fresh">Crisp. Clean. Suspiciously productive.</string>
+    <string name="tagline_foggy">A little foggy up here. Nothing a glass of water can\'t fix.</string>
+    <string name="tagline_cracking">Hairline cracks. Maybe go look at a tree?</string>
+    <string name="tagline_melting">Melting like cheese on hot toast.</string>
+    <string name="tagline_rotten">Congrats, I\'m compost. Fresh start at midnight.</string>
+
+    <string-array name="poke_fresh">
+        <item>Hey! I\'m thinking here.</item>
+        <item>Boop received. Running at 100%.</item>
+        <item>Feeling sharp today.</item>
+        <item>Ask me anything. Except the date.</item>
+    </string-array>
+    <string-array name="poke_foggy">
+        <item>Wait, what was I doing?</item>
+        <item>Loading thoughts… please hold.</item>
+        <item>A bit foggy, still cute.</item>
+    </string-array>
+    <string-array name="poke_cracking">
+        <item>Careful, I\'m fragile today.</item>
+        <item>Ow. That\'s a crack.</item>
+        <item>One more reel and I split in two.</item>
+    </string-array>
+    <string-array name="poke_melting">
+        <item>Don\'t poke! I\'ll drip.</item>
+        <item>Everything is soup.</item>
+        <item>Who turned up the heat?</item>
+    </string-array>
+    <string-array name="poke_rotten">
+        <item>Bzzz. The flies like me now.</item>
+        <item>I\'ve seen things. Mostly dance trends.</item>
+        <item>Let me rest. I heal at midnight.</item>
+    </string-array>
+
+    <string name="brain_description">Your brain is %1$s, rot level %2$d percent</string>
+</resources>

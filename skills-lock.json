@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "ste-explain": {
+      "source": "pasha1442/ASD-SDE-80-Karpathy",
+      "sourceType": "github",
+      "skillPath": "skills/ste-explain/SKILL.md",
+      "computedHash": "43b71addaa127ee1212da617e6e2e0736b4fe1e742219f9d4ea13e15ba402ae3"
+    }
+  }
+}

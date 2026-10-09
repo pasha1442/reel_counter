@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rc_navy">#FF0C0B0E</color>
+    <color name="ic_launcher_background">#FFFFD43B</color>
+
+    <!-- Compose draws everything; the window only needs a dark background so there is no white flash. -->
+    <style name="Theme.ReelCounter" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/rc_navy</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

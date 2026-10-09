@@ -1,0 +1,16 @@
+executionPrerequisite: >-
+  App on the Your brain screen, the brain showing Foggy.
+steps:
+  - echo: The Rotten stage in the stage row (raw tap, see store-preview-01-today)
+  - tool: gesture-tap
+    args: { x: 0.851, y: 0.561 }
+  - await: { visible: { text: Back to now } }
+  - echo: The Fresh stage in the stage row
+  - tool: gesture-tap
+    args: { x: 0.149, y: 0.561 }
+  - wait: 3400
+  - echo: The back arrow at the top left
+  - tool: gesture-tap
+    args: { x: 0.09, y: 0.059 }
+  - echo: No await on Today (slow on camera); store-preview-03 checks where this landed
+  - wait: 1200
